@@ -1,11 +1,12 @@
 {% assign event = include.event %}
 
 <article class="container px-4 py-5">
-  <div class="row flex-lg-row-reverse align-items-center g-5 py-5 rounded-3 border shadow-lg">
-    <div class="col-10 col-sm-8 col-lg-4 mt-0">
+  <div class="row flex-lg-row-reverse g-5 py-5 rounded-3 border shadow-lg">
+    <div class="col-10 col-sm-8 col-lg-4 mt-0 event-image">
       <img src="./assets/images/{{ event.image }}" class="d-block mx-lg-auto img-fluid" alt="{{ event.title | escape }}" width="300" loading="lazy">
     </div>
-    <div class="col-lg-8 mt-0">
+
+    <div class="col-lg-8 mt-0 event-content">
       <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">{{ event.title | escape }}</h1>
       <p class="lead">{{ event.content }}</p>
       <div class="">

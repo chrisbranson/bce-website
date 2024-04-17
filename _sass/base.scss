@@ -1,1 +1,18 @@
 // base css styles go here
+.logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+@media (min-width: 100px) {
+  .event-image {
+    margin-bottom: var(--bs-gutter-y);
+  }
+}
+
+@media (min-width: 992px) {
+  .event-image {
+    margin-bottom: 0;
+  }
+}
